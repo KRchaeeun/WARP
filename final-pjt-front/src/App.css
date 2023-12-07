@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+/* font-family: 'Fugaz One', sans-serif */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+/* font-family: 'Kanit', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/* font-family: 'Abril Fatface', serif; */
+
+nav {
+  font-family: 'Fugaz One', sans-serif !important;
+  font-size: 30px;
+  color: white !important;
+
+  /* 드래그 방지 */
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+
+.main {
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+  color: white;
+}

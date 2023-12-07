@@ -5,9 +5,9 @@ This is the project about the movie recommendation website using Django & Vue.js
 <br>
  
 ## MEMBERS 👩‍👧‍👧  
-- Hana Na  
-- Yejin Eum  
-- Chaeeun Lee  
+- [Hana Na](https://github.com/hana-nana)
+- [Yejin Eum](https://github.com/yjeum)  
+- [Chaeeun Lee](https://github.com/KRchaeeun)  
 
 <br>
 <br>

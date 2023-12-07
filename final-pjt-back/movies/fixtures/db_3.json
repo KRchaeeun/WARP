@@ -1,0 +1,344 @@
+[
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "대부 특별영상",
+            "key": "HyzDpf20VRA",
+            "video_type": "Trailer",
+            "movie": 238
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "쇼생크 탈출",
+            "key": "IoWAdxwfNGU",
+            "video_type": "Trailer",
+            "movie": 278
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "대부2_예고편",
+            "key": "k3gcc_BK2jg",
+            "video_type": "Trailer",
+            "movie": 240
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "영화 '센과 치히로의 행방불명' 예고편",
+            "key": "lwrG3HQXTFw",
+            "video_type": "Trailer",
+            "movie": 129
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "'기생충' 2차 예고편",
+            "key": "jD5dwCIOvtM",
+            "video_type": "Trailer",
+            "movie": 496243
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "흑백판 예고편",
+            "key": "4jc3uQErc7I",
+            "video_type": "Trailer",
+            "movie": 496243
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "2차 예고편",
+            "key": "Q38h5XD4RKE",
+            "video_type": "Trailer",
+            "movie": 496243
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "1차 예고편",
+            "key": "jBdRhhSt3Bc",
+            "video_type": "Trailer",
+            "movie": 496243
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "다크 나이트(The Dark Knight, 2008) 메인 예고편|PLAYYMOVIE",
+            "key": "5k2hEJ98cQU",
+            "video_type": "Trailer",
+            "movie": 155
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[너의 이름은.] 더빙판 티저 예고편",
+            "key": "EM4X6ArXPKA",
+            "video_type": "Trailer",
+            "movie": 372058
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "'너의 이름은.' 메인 예고편",
+            "key": "0GtEGZv1_Os",
+            "video_type": "Trailer",
+            "movie": 372058
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "포레스트 검프_1차 예고편_PLAYY",
+            "key": "YT8fUiRZY14",
+            "video_type": "Trailer",
+            "movie": 13
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[반지의 제왕: 왕의 귀환 (The Lord Of The Rings: The Return Of The King)] 예고편",
+            "key": "3EEGmuB7ADo",
+            "video_type": "Trailer",
+            "movie": 122
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "영화 '인생은아름다워' 메인 예고편 (Life Is Beautiful,  Official Trailer)",
+            "key": "LC903LkokMA",
+            "video_type": "Trailer",
+            "movie": 637
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[예고편] 시네마 천국_본 예고편",
+            "key": "nHluS2LOIe8",
+            "video_type": "Trailer",
+            "movie": 11216
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "파이트클럽(Fight Club, 1999)_메인예고편_PLAYY",
+            "key": "2EKUbAKFYg0",
+            "video_type": "Trailer",
+            "movie": 550
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "인터스텔라 2차 예고편",
+            "key": "LEEtpP6dkIY",
+            "video_type": "Trailer",
+            "movie": 157336
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "인터스텔라 최종 예고편",
+            "key": "vABfjuXZhYY",
+            "video_type": "Trailer",
+            "movie": 157336
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "인터스텔라 메인 예고편",
+            "key": "d2VN6NNa9BE",
+            "video_type": "Trailer",
+            "movie": 157336
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[인터스텔라] 1차 예고편",
+            "key": "66_Iosx46DI",
+            "video_type": "Trailer",
+            "movie": 157336
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "나소흑전기: 첫만남편 - 신비한 모험 영상",
+            "key": "Jw0baOXX4XQ",
+            "video_type": "Trailer",
+            "movie": 620249
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "인터내셔널 예고편",
+            "key": "9DZU3NNyAg8",
+            "video_type": "Trailer",
+            "movie": 569094
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[스파이더맨: 뉴 유니버스] 3차 예고편",
+            "key": "vhkCBOsOoYY",
+            "video_type": "Trailer",
+            "movie": 324857
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[스파이더맨: 뉴 유니버스] 2차 예고편 공개!! 2018년 12월 개봉",
+            "key": "uOBs19cUSUU",
+            "video_type": "Trailer",
+            "movie": 324857
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "(VOD천국)하울의움직이는성 메인예고편 HD",
+            "key": "YpqMZt1gOXU",
+            "video_type": "Trailer",
+            "movie": 4935
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "반지의 제왕 : 반지 원정대 - Trailer",
+            "key": "7OIzI2_Byds",
+            "video_type": "Trailer",
+            "movie": 120
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "목소리의 형태 (聲の形, 2016) 메인 예고편 PLAYY",
+            "key": "RCuFlaQlu4c",
+            "video_type": "Trailer",
+            "movie": 378064
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "영화 [소원] 감동의 메인예고편",
+            "key": "RQBJY1ar00Y",
+            "video_type": "Trailer",
+            "movie": 255709
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[위플래쉬] 메인 예고편",
+            "key": "Qsbu5Phz6u8",
+            "video_type": "Trailer",
+            "movie": 244786
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "반딧불이의 숲으로🌲(나츠메 우인장 단편애니작품)",
+            "key": "Pv1TvqdvwtA",
+            "video_type": "Trailer",
+            "movie": 92321
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "【극장판 5등분의 신부】 본예고 2탄 (feat.그녀들의 고백)_개봉 D-6 days_[Aniplus]",
+            "key": "MVsrrX38NpI",
+            "video_type": "Trailer",
+            "movie": 820067
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "극장판 애니메이션 「조제, 호랑이 그리고 물고기들」 예고편 ③ 번역/자막",
+            "key": "njwmrB67dpc",
+            "video_type": "Trailer",
+            "movie": 652837
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "『극장판 바이올렛 에버가든』 메인 예고편",
+            "key": "Arav_7bsCCo",
+            "video_type": "Trailer",
+            "movie": 533514
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[죽은 시인의 사회] 메인 예고편",
+            "key": "DDOvnBnej_o",
+            "video_type": "Trailer",
+            "movie": 207
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "빽투더퓨쳐예고편",
+            "key": "qiAB9R3TOK8",
+            "video_type": "Trailer",
+            "movie": 105
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "애니 [신 에반게리온 극장판] 국내 메인 예고편(한글): 2022.10: 신극장판 4부 완결편",
+            "key": "gbfICiHJah8",
+            "video_type": "Trailer",
+            "movie": 283566
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "지옥의 묵시록: 파이널 컷 - 스페셜 예고편 (한글 자막)",
+            "key": "t7UibQ3_540",
+            "video_type": "Trailer",
+            "movie": 28
+        }
+    },
+    {
+        "model": "movies.video",
+        "fields": {
+            "name": "[파이브 피트] 메인 예고편",
+            "key": "vSq5P7rEbZA",
+            "video_type": "Trailer",
+            "movie": 527641
+        }
+    }
+]
