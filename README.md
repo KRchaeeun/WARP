@@ -170,8 +170,6 @@ This document provides an overview of the Vue components used in the movie recom
 
 <img src='./img/Vue.png'>
    
-<br>
- 
 ## ABOUT OUR PROJECT 👀
    
 <br>
