@@ -1,24 +1,64 @@
-# pjt_movie  
+# Warp
 This is the project about the movie recommendation website using Django & Vue.js.  
-  
+
+<br>
+<br>
+ 
 ## MEMBERS 👩‍👧‍👧  
 - Hana Na  
 - Yejin Eum  
 - Chaeeun Lee  
-  
-  
-## OUR COMMIT RULES 📑  
-This is our commit rules.   
-This establish a consistent and organized codebase, ensuring all team members contribute in a uniform manner. This consistency streamlines the code review process, reduces errors, and facilitates easier collaboration and understanding among developers.  
-  
-  
 
+<br>
+<br>
+   
+## OUR CODE COLLABORATION RULES 📑  
+This is our code collaboration rules.
+These rules are designed to establish a consistent, organized, and efficient approach to using Git, committing changes, and managing merges. They ensure that all team members contribute in a uniform manner. This consistency streamlines the code review process, reduces errors, and facilitates easier collaboration and understanding among developers.
+ 
+<br>
+ 
+### COMMIT: Commit Messages  
+1. Purposefulness: Clearly convey the purpose and content of the changes.  
+2. Format: Use the format [Type]: Description. For example, [FEAT]: Add user login functionality.  
+3. Detailing: In the body of the message, explain in detail why the change was necessary or what problem it solves.  
+ 
+<br>
+ 
+### COMMIT: Commit Types  
+1. FILE: Creation of folders and files.
+2. INIT: Establishing the initial framework for a feature.
+3. CREATE: Writing initial functionalities.
+4. UPDATE: Adding new features.
+5. FIX: Correcting bugs.
+6. MERGE: Merging code branches.
+7. TEST: Adding or modifying test code (e.g., console.log).
+8. STYLE: Changes or additions to design.
+9. DOCS: Documentation related changes (like README updates). 
+ 
+<br>
+ 
+### GIT: Branch Strategy  
+1. main: Maintains stable, release-ready code.
+2. dev: Holds code currently under development.
+3. Feature-Specific Branches: For example, feature/login, feature/signup.
+ 
+<br>
+ 
+### MERGE: Regular Code Review and Merging  
+1. Ensure to undergo a code review process and obtain team consensus before merging.  
+
+<br>
+<br>
+ 
 ## ROAD MAP 🚀  
 This is our project schedule.  
 This will provide our project with a cohesive direction, ensuring all team members and stakeholders are aligned with a unified vision, while also serving as a guiding reference for decision-making and tracking progress.  
-  
-  
+ 
 
+<br>
+<br>
+ 
 ## BRAINSTORMING IDEAS 🧠  
 This is the records of discussions/meetings during the project duration.  
   
