@@ -49,6 +49,13 @@ These rules are designed to establish a consistent, organized, and efficient app
 1. Ensure to undergo a code review process and obtain team consensus before merging.  
 
 <br>
+
+<img src='./img/git1.PNG' width="300" height="250">
+<img src='./img/git2.PNG' width="300" height="250">    
+<img src='./img/git3.PNG' width="300" height="250">  
+<img src='./img/git4.PNG' width="300" height="250">    
+
+<br>
 <br>
  
 ## ABOUT OUR PROJECT 👀
