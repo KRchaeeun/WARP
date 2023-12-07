@@ -187,7 +187,7 @@ This document provides an overview of the Vue components used in the movie recom
 
 ### Account Deletion  
 1. When proceeding with account deletion, delete the information from the database, log out, and then navigate to the INTRO PAGE.  
-![accountdeletion](./img/account deletion.gif)
+![accountdeletion](./img/account%20deletion.gif)
  
 <br>
  
@@ -202,7 +202,7 @@ This document provides an overview of the Vue components used in the movie recom
 1. Set the decade.  
 2. For the genre, enable both 'select all' and 'multiple selections'.  
 3. Receive decade and genre data and navigate to the movie recommendation page.  
-![preferencesurvey](./img/preference survey.gif)
+![preferencesurvey](./img/preference%20survey.gif)
  
 <br>  
  
@@ -210,7 +210,7 @@ This document provides an overview of the Vue components used in the movie recom
 1. Recommend movies based on the preference survey.  
 2. Provide trailer videos for the recommended movies.  
 3. Recommend 10 masterpieces and 10 hidden gems separately; masterpieces are recommended based on ratings, while hidden gems are high-rated but lesser-known movies.  
-![providelist](./img/provide list.gif)
+![providelist](./img/provide%20list.gif)
  
 <br>  
  
@@ -218,7 +218,7 @@ This document provides an overview of the Vue components used in the movie recom
 1. Provide movie information including posters, trailers, etc.  
 2. Use the SIMILAR API to recommend movies similar to the current one.  
 3. Enable writing movie reviews, saving likes, and WISHLIST.  
-![movieinformation](./img/movie information.gif)
+![movieinformation](./img/movie%20information.gif)
  
 <br>
  
@@ -233,7 +233,7 @@ This document provides an overview of the Vue components used in the movie recom
 1. When writing a review, the star rating is filled in according to mouse movement.
 2. For movie reviews, only one's own reviews can be edited or deleted.
 3. When editing, the original data is displayed.  
-![starrating](./img/star rating.gif)
+![starrating](./img/star%20rating.gif)
  
 <br>  
  
@@ -263,7 +263,7 @@ This document provides an overview of the Vue components used in the movie recom
 2. Ability to like posts.
 3. View only the comments relevant to a specific post.
 4. Only the author can edit or delete their comments.  
-![communitycomments](./img/community comments.gif)
+![communitycomments](./img/community%20comments.gif)
  
 <br>  
  
@@ -272,7 +272,7 @@ This document provides an overview of the Vue components used in the movie recom
 2. Ability to follow or unfollow if the user is not oneself.
 3. Provides a list of followings and followers.
 4. WISHLIST is not displayed if the user is not oneself.  
-![followfollower](./img/follow follower.gif)
+![followfollower](./img/follow%20follower.gif)
 
 <br>
 <br>
