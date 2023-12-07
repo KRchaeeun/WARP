@@ -57,7 +57,7 @@ These rules are designed to establish a consistent, organized, and efficient app
 <br>
 <br>
  
-## ABOUT OUR PROJECT 👀
+## PREPARATION 💦
 
 <br>
 
@@ -169,6 +169,11 @@ This document provides an overview of the Vue components used in the movie recom
 <br>
 
 <img src='./img/Vue.png'>
+   
+<br>
+<br>
+ 
+## ABOUT OUR PROJECT 👀
    
 <br>
 <br>
