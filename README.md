@@ -180,21 +180,21 @@ This document provides an overview of the Vue components used in the movie recom
 2. Display feature descriptions and frequently asked questions.
 3. Add movement on button hover.
 4. Navigate to Login and Signup.
-5. Do not display the navigation bar in the Intro window.
-<video src="./img/signup.mp4" style="max-width: 730px;" autoplay muted></video>
+5. Do not display the navigation bar in the Intro window.  
+![signup](./img/signup.gif)
 
 <br>
 
 ### Account Deletion  
 1. When proceeding with account deletion, delete the information from the database, log out, and then navigate to the INTRO PAGE.  
-<video src="./img/account deletion.mp4" style="max-width: 730px;" autoplay muted></video>
+![account deletion](./img/account deletion.gif)
  
 <br>
  
 ### Login & Logout  
 1. Access the database using the username and password when logging in.  
 2. Navigate to the INTRO PAGE upon logging out.  
-<video src="./img/login&logout.mp4" style="max-width: 730px;" autoplay muted></video>
+![login&logout](./img/login&logout.gif)
  
 <br>  
  
@@ -202,7 +202,7 @@ This document provides an overview of the Vue components used in the movie recom
 1. Set the decade.  
 2. For the genre, enable both 'select all' and 'multiple selections'.  
 3. Receive decade and genre data and navigate to the movie recommendation page.  
-<video src="./img/preference survey.mp4" style="max-width: 730px;" autoplay muted></video>
+![preference survey](./img/preference survey.gif)
  
 <br>  
  
@@ -210,7 +210,7 @@ This document provides an overview of the Vue components used in the movie recom
 1. Recommend movies based on the preference survey.  
 2. Provide trailer videos for the recommended movies.  
 3. Recommend 10 masterpieces and 10 hidden gems separately; masterpieces are recommended based on ratings, while hidden gems are high-rated but lesser-known movies.  
-<video src="./img/provide list.mp4" style="max-width: 730px;" autoplay muted></video>
+![provide list](./img/provide list.gif)
  
 <br>  
  
@@ -218,22 +218,22 @@ This document provides an overview of the Vue components used in the movie recom
 1. Provide movie information including posters, trailers, etc.  
 2. Use the SIMILAR API to recommend movies similar to the current one.  
 3. Enable writing movie reviews, saving likes, and WISHLIST.  
-<video src="./img/movie information.mp4" style="max-width: 730px;" autoplay muted></video>
+![movie information](./img/movie information.gif)
  
 <br>
  
 ### Continuous Recommendations of Similar Movies
 1. Clicking on a movie recommended as similar navigates to its detailed page.
-2. Writing movie reviews is possible.
-<video src="./img/continuous.mp4" style="max-width: 730px;" autoplay muted></video>  
+2. Writing movie reviews is possible.  
+![continuous](./img/continuous.gif)
  
 <br>  
  
 ### Ability to Write Review Content and Star Ratings  
 1. When writing a review, the star rating is filled in according to mouse movement.
 2. For movie reviews, only one's own reviews can be edited or deleted.
-3. When editing, the original data is displayed.
-<video src="./img/star rating.mp4" style="max-width: 730px;" autoplay muted></video>  
+3. When editing, the original data is displayed.  
+![star rating](./img/star rating.gif)
  
 <br>  
  
@@ -241,20 +241,20 @@ This document provides an overview of the Vue components used in the movie recom
 1. Search is conducted through a modal window.
 2. Entering a word in the search bar provides a list of movies containing that word in their title.
 3. Clicking on a movie navigates to its detailed page.
-4. When there are multiple movies, scrolling is possible within the modal.
-<video src="./img/search.mp4" style="max-width: 730px;" autoplay muted></video> 
+4. When there are multiple movies, scrolling is possible within the modal.  
+![search](./img/search.gif)
   
 <br>  
   
 ### Community  
 1. Display the list number, title, author, time of creation, and the number of likes.
-2. Provide two display formats (by likes, by recency) as buttons: Display posts in order of likes, Display posts in order of most recent creation.
-<video src="./img/community1.mp4" style="max-width: 730px;" autoplay muted></video>  
+2. Provide two display formats (by likes, by recency) as buttons: Display posts in order of likes, Display posts in order of most recent creation.  
+![community1](./img/community1.gif)
  
 <br>  
  
-1. Writing Community Posts.
-<video src="./img/community2.mp4" style="max-width: 730px;" autoplay muted></video>  
+1. Writing Community Posts.  
+![community2](./img/community2.gif)
  
 <br>
  
@@ -263,7 +263,7 @@ This document provides an overview of the Vue components used in the movie recom
 2. Ability to like posts.
 3. View only the comments relevant to a specific post.
 4. Only the author can edit or delete their comments.  
-<video src="./img/community comments.mp4" style="max-width: 730px;" autoplay muted></video>  
+![community comments](./img/community comments.gif)
  
 <br>  
  
@@ -272,7 +272,7 @@ This document provides an overview of the Vue components used in the movie recom
 2. Ability to follow or unfollow if the user is not oneself.
 3. Provides a list of followings and followers.
 4. WISHLIST is not displayed if the user is not oneself.  
-<video src="./img/follow follower.mp4" style="max-width: 730px;" autoplay muted></video> 
+![follow follower](./img/follow follower.gif)
 
 <br>
 <br>
