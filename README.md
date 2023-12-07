@@ -106,7 +106,11 @@ This document defines the functional and non-functional requirements for the dev
  
 ### ERD  
 This document details the Entity-Relationship Diagram (ERD) designed for the movie recommendation website project. The ERD illustrates the system's database schema, showcasing how various entities such as users, movies, reviews, and community posts are interconnected.  
-   
+
+<br>
+
+<img src='./img/ERD_final.png'>
+
 <br>
 <br>
  
@@ -162,6 +166,9 @@ This document outlines the API design for the movie recommendation website. The 
 ### VUE COMPONENTS  
 This document provides an overview of the Vue components used in the movie recommendation website. Vue.js, a progressive JavaScript framework, is utilized to create interactive and dynamic user interfaces. The components are modular and reusable, enhancing the efficiency of the development process.
  
+<br>
+
+<img src='./img/Vue.png'>
    
 <br>
 <br>
