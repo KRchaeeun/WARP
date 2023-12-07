@@ -17,6 +17,12 @@ This is our code collaboration rules.
 These rules are designed to establish a consistent, organized, and efficient approach to using Git, committing changes, and managing merges. They ensure that all team members contribute in a uniform manner. This consistency streamlines the code review process, reduces errors, and facilitates easier collaboration and understanding among developers.
  
 <br>
+
+<img src='./img/git1.PNG' width="250" height="200"> <img src='./img/git2.PNG' width="250" height="200">
+
+<img src='./img/git3.PNG' width="250" height="200"> <img src='./img/git4.PNG' width="250" height="200">
+
+<br>
  
 ### COMMIT: Commit Messages  
 1. Purposefulness: Clearly convey the purpose and content of the changes.  
@@ -47,13 +53,6 @@ These rules are designed to establish a consistent, organized, and efficient app
  
 ### MERGE: Regular Code Review and Merging  
 1. Ensure to undergo a code review process and obtain team consensus before merging.  
-
-<br>
-
-<img src='./img/git1.PNG' width="250" height="200"> <img src='./img/git2.PNG' width="250" height="200">
-
-<img src='./img/git3.PNG' width="250" height="200"> <img src='./img/git4.PNG' width="250" height="200">
-
 
 <br>
 <br>
