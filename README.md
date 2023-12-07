@@ -50,10 +50,10 @@ These rules are designed to establish a consistent, organized, and efficient app
 
 <br>
 
-<img src='./img/git1.PNG' width="250" height="200">
-<img src='./img/git2.PNG' width="250" height="200">    
-<img src='./img/git3.PNG' width="250" height="200">  
-<img src='./img/git4.PNG' width="250" height="200">    
+<img src='./img/git1.PNG' width="250" height="200"> <img src='./img/git2.PNG' width="250" height="200">
+
+<img src='./img/git3.PNG' width="250" height="200"> <img src='./img/git4.PNG' width="250" height="200">
+
 
 <br>
 <br>
