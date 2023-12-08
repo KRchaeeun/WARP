@@ -11,6 +11,46 @@ This is the project about the movie recommendation website using Django & Vue.js
 
 <br>
 <br>
+  
+## HOW TO START  
+
+1. Obtain a TMDB API key.
+2. Create a .env file inside the final-pjt-back directory.
+3. Write in the .env file in the following format. abe2123 and Aebd153 are examples.
+```
+TMDB_API_KEY="abe2123"
+TMDB_ACCESS_TOKEN="Aebd153"
+```
+4. In final-pjt-front, press ctrl + shift + f to search for 'Your API Key', delete this part, and enter your TMDB API key.
+5. Run the Django server:
+```python
+cd final-pjt-back  # Move into the final-pjt-back directory
+
+python -m venv venv  # Create a virtual environment
+source venv/script/activates  # Activate the virtual environment
+pip install -r requirements.txt  # Install libraries
+
+python manage.py makemigrations  # Create migrations
+python manage.py migrate  # Migrate
+python manage.py loaddata movies/fixtures/db_actors_directors_keywords.json
+python manage.py loaddata movies/fixtures/db_genres_providers_videos.json
+python manage.py loaddata movies/fixtures/db_movies.json
+
+python manage.py runserver  # Run the server
+```  
+6. Run the Vue.js server:
+```python
+cd final-pjt-front  # Move into the final-pjt-front directory
+
+npm install
+npm install axios  # Install axios
+npm install types.js  # Install typed.js
+
+npm run dev  # Run the server
+```
+
+<br>
+<br>
    
 ## OUR CODE COLLABORATION RULES 📑  
 This is our code collaboration rules.

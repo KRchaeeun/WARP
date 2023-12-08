@@ -198,7 +198,7 @@ const fetchAllTrailers = async () => {
 onMounted(fetchAllTrailers);
 
 const fetchMovieTrailer = async (movieId) => {
-  const apiKey = '5c95202746685cd5450538f7aa718f76'; // TMDB API 키
+  const apiKey = 'Your API Key'; // TMDB API 키
   const url = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}`;
 
   try {
