@@ -242,7 +242,35 @@ This document provides an overview of the Vue components used in the movie recom
 1. Set the decade.  
 2. For the genre, enable both 'select all' and 'multiple selections'.  
 3. Receive decade and genre data and navigate to the movie recommendation page.  
-![preferencesurvey](./img/preference%20survey.gif)
+![preferencesurvey](./img/preference%20survey.gif)  
+
+<br>
+
+- This is the function of aggregating and displaying movie data:
+```python
+# Counting the number of movies per year
+movies_per_year = (
+    Movie.objects.annotate(year=ExtractYear("release_date"))
+    .values("year")
+    .annotate(count=Count("id"))
+    .order_by("year")
+)
+
+for entry in movies_per_year:
+    print(f"Year: {entry['year']}, Count: {entry['count']}")
+
+# Counting the number of movies per year
+# Aggregating the number of movies in increments of 10 years
+movies_per_decade = (
+    Movie.objects.annotate(decade=ExtractYear("release_date") / 10 * 10)
+    .values("decade")
+    .annotate(count=Count("id"))
+    .order_by("decade")
+)
+
+for entry in movies_per_decade:
+    print(f"Decade: {int(entry['decade'])}s, Count: {entry['count']}")
+```
  
 <br>  
  
@@ -252,7 +280,104 @@ This document provides an overview of the Vue components used in the movie recom
 3. Recommend 10 masterpieces and 10 hidden gems separately; masterpieces are recommended based on ratings, while hidden gems are high-rated but lesser-known movies.  
 ![providelist](./img/provide%20list.gif)
  
-<br>  
+<br>
+
+- This is the hidden movie recommendation function:
+```python
+# hidden movie recommendation function
+def recommend_hidden_movies(request):
+    # Retrieve a list of years (default is all years)
+    years = request.GET.getlist("year")  # Receives multiple years as a list
+    if not years:
+        years = Movie.objects.dates("release_date", "year").values_list(
+            "release_date__year", flat=True
+        )
+
+    expanded_years = []
+    for year in years:
+        if year.endswith("s"):
+            for i in range(0, 10):
+                expanded_years.append(f"{year[:-2]}{i}")
+        else:
+            expanded_years.append(year)
+
+    # Retrieve a list of genres (default is all genres)
+    genres = request.GET.getlist("genre")  # Receives multiple genres as a list
+    print(expanded_years)
+    if not genres:
+        genres = Genre.objects.values_list("name", flat=True)
+
+    # Extract the popularity values as a list
+    popularity_values = list(Movie.objects.values_list("popularity", flat=True))
+
+    # Use numpy to calculate the 50th percentile
+    percentile_50 = np.percentile(popularity_values, 50)
+    # Calculate the average value of the vote_average field
+    average_vote = Movie.objects.aggregate(Avg("vote_average"))["vote_average__avg"]
+
+    # Set the basic query
+    query = Movie.objects.filter(
+        release_date__year__in=expanded_years,  # Year filter
+        popularity__lte=percentile_50,          # Less than or equal to 50th percentile in popularity
+        vote_average__gte=average_vote,         # Greater than or equal to the average vote
+    ).order_by("-vote_average")
+
+    # Apply genre filter
+    if genres:
+        query = query.filter(genres__name__in=genres).distinct()
+
+    recommended_movies = query[:10]
+
+    serializer = MovieListSerializer(recommended_movies, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+```
+
+<br>
+
+- This is the movie recommendation function:
+``` python
+# recommendation function
+def recommend_movies(request):
+    # Retrieve a list of years (default is all years)
+    years = request.GET.getlist("year")  # Receives multiple years as a list
+    if not years:
+        years = Movie.objects.dates("release_date", "year").values_list(
+            "release_date__year", flat=True
+        )
+
+    expanded_years = []
+    for year in years:
+        if year.endswith("s"):
+            for i in range(0, 10):
+                expanded_years.append(f"{year[:-2]}{i}")
+        else:
+            expanded_years.append(year)
+
+    # Retrieve a list of genres (default is all genres)
+    genres = request.GET.getlist("genre")  # Receives multiple genres as a list
+
+    if not genres:
+        genres = Genre.objects.values_list("name", flat=True)
+
+    average_vote = Movie.objects.aggregate(Avg("vote_average"))["vote_average__avg"]
+
+    # Set the basic query
+    query = Movie.objects.filter(
+        release_date__year__in=expanded_years,  # Year filter
+        vote_average__gte=average_vote,         # Filter for movies with average vote greater than or equal to the average
+    ).order_by("-popularity")
+
+    # Apply genre filter
+    if genres:
+        query = query.filter(genres__name__in=genres).distinct()
+
+    recommended_movies = query[:10]
+
+    serializer = MovieListSerializer(recommended_movies, many=True)
+    return Response(serializer.data, status=status.HTTP_200_OK)
+```
+
+<br>
  
 ### Movie Information, Similar Movie Recommendations, Reviews, Likes, WISHLIST Storage  
 1. Provide movie information including posters, trailers, etc.  
@@ -284,15 +409,140 @@ This document provides an overview of the Vue components used in the movie recom
 4. When there are multiple movies, scrolling is possible within the modal.  
 ![search](./img/search.gif)
   
-<br>  
-  
-### Community  
+<br>
+
+- This is the modal design for the search:
+```js  
+.modal {
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+/* Elements for search on the home screen (not functional, only used for displaying the modal) */
+#home-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+#home-search-box input {
+  font-family: 'NanumSquareNeo-Variable';
+  outline: none;
+  border: none;
+  border-bottom: white solid;
+  background-color: #ffffff00;
+  color: white;
+}
+
+#home-search-box input:hover {
+  border-bottom: gray solid;
+  transition: all 0.2s;
+  transform: scale(1.03);
+}
+
+#home-search-box img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+/* Elements inside the search modal */
+#search-modal {
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  height: 100vw;
+}
+
+#search-modal-search {
+  z-index: 20;
+  width: 100%;
+  position: fixed;
+  top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+#search-modal-search-box {
+  z-index: 30;
+  margin-top: 50px;
+}
+
+#search-modal-search-box input {
+  font-family: 'NanumSquareNeo-Variable';
+  outline: none;
+  border: none;
+  border-bottom: white solid;
+  background-color: #ffffff00;
+  color: white;
+}
+
+#search-modal-search-box input:hover {
+  transition: all 0.2s;
+  transform: scale(1.03);
+}
+
+#search-modal-search-box img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+#search-modal-result {
+  width: 100%;
+  max-width: 900px;
+  z-index: 30;
+}
+
+/* Background animation */
+#search-modal-bg {
+  z-index: 10;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #222222b0;
+  backdrop-filter: blur(20px);
+}
+
+button {
+  color: rgba(116, 116, 116, 0);
+}
+```
+
+<br>
+
+### Community Filtering  
 1. Display the list number, title, author, time of creation, and the number of likes.
 2. Provide two display formats (by likes, by recency) as buttons: Display posts in order of likes, Display posts in order of most recent creation.  
 ![community1](./img/community1.gif)
  
-<br>  
- 
+<br>
+
+- This is the filtering function from Vue.js:
+```js
+// Currently selected sorting method
+const currentSort = ref('latest')
+
+// Computed property for sorting the list of posts
+const sortedPosts = computed(() => {
+  return posts.value.slice().sort((a, b) => {
+    if (currentSort.value === 'latest') {
+      // Sort by most recent date
+      return new Date(b.created_at) - new Date(a.created_at)
+    } else if (currentSort.value === 'likes') {
+      // Sort by number of likes
+      return b.likes_count - a.likes_count
+    }
+    return 0
+  })
+})
+```  
+
+<br>
+
+### Community Posting 
 1. Writing Community Posts.  
 ![community2](./img/community2.gif)
  
@@ -320,4 +570,24 @@ This document provides an overview of the Vue components used in the movie recom
 ## BRAINSTORMING IDEAS 🧠  
 This is the records of discussions/meetings during the project duration.  
   
-[NotionURL]
+[NotionURL]  
+  
+## Thoughts on the Project 🍻  
+This is the section where individuals share their personal insights, experiences, and overall impressions gained from working on the project.
+  
+### Hana Na  
+
+
+ 
+<br>
+ 
+### Yejin Eum  
+  
+
+<br>
+  
+### Chaeeun Lee 
+
+
+<br>
+ 
