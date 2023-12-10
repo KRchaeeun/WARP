@@ -570,8 +570,11 @@ const sortedPosts = computed(() => {
 ## BRAINSTORMING IDEAS 🧠  
 This is the records of discussions/meetings during the project duration.  
   
-[NotionURL]  
-  
+[NotionURL](https://www.notion.so/pjtwarp/PJT-24480b50f90542b9ae25c8f265468a2a)  
+
+<br>
+<br>
+ 
 ## Thoughts on the Project 🍻  
 This is the section where individuals share their personal insights, experiences, and overall impressions gained from working on the project.
   
@@ -587,7 +590,16 @@ This is the section where individuals share their personal insights, experiences
 <br>
   
 ### Chaeeun Lee 
+Lessons Learned from the Project:
+Through this project, I gained a profound understanding of the importance of effective version control using Git and strategic branch management. The experience of collaborating through pull requests and merges, and resolving code conflicts was immensely educational. Utilizing Django, I designed database models and developed RESTful APIs for frontend-backend communication, realizing the significance of user authentication and permission management. In frontend development with Vue.js, I leveraged Vue components and Vue Router to construct a Single Page Application (SPA) structure and implemented state management using Vuex. This approach significantly enhanced the responsive web design and user interaction elements of the project.
 
+New Skills Acquired:
+In backend development with Django, I newly adopted the dj_rest_auth library to implement user authentication features. I set up URL paths for critical authentication functionalities like user login, logout, and password changes, integrating dj_rest_auth URLs into the Django project's URL configurations for efficient authentication handling. Additionally, to ensure project security, sensitive configuration details, such as API keys, were managed via .env files to prevent exposure in public repositories like GitLab or GitHub. In frontend development with Vue.js, the introduction of the typed.js library added dynamic text animation effects, enriching the user experience and enhancing website interactivity.
 
-<br>
- 
+Challenges Faced:
+The most significant challenge in this first project was dividing front-end and back-end tasks among three team members. This led to numerous errors and complex code, requiring considerable time for problem-solving. As beginners in project development, we spent a lot of time identifying and resolving issues, often struggling to fully understand the principles behind the codes found through Google searches. This experience underscored the importance of systematic collaboration and code management in future projects.
+
+Project Reflections:
+Although I put considerable effort into producing a high-quality output, I felt a sense of disappointment with the final product, given the constrained timeframe of 10 days. My professor advised focusing on more prominent, visible features rather than on smaller details. However, I found myself spending too much time on minor aspects, resulting in an inability to fully develop significant features, leading to a less satisfactory outcome. In future projects, I plan to focus initially on implementing standout features, leaving detailed implementations for later stages to achieve more satisfying results.
+
+These experiences have provided me with invaluable lessons in teamwork, project management, and technical skills, laying a solid foundation for my growth as a more professional and effective developer.
