@@ -566,20 +566,7 @@ This is the records of discussions/meetings during the project duration.
 <br>
  
 ## Thoughts on the Project 🍻  
-This is the section where individuals share their personal insights, experiences, and overall impressions gained from working on the project.
-  
-### Hana Na  
 
-
- 
-<br>
- 
-### Yejin Eum  
-  
-
-<br>
-  
-### Chaeeun Lee 
 Lessons Learned from the Project:
 Through this project, I gained a profound understanding of the importance of effective version control using Git and strategic branch management. The experience of collaborating through pull requests and merges, and resolving code conflicts was immensely educational. Utilizing Django, I designed database models and developed RESTful APIs for frontend-backend communication, realizing the significance of user authentication and permission management. In frontend development with Vue.js, I leveraged Vue components and Vue Router to construct a Single Page Application (SPA) structure and implemented state management using Vuex. This approach significantly enhanced the responsive web design and user interaction elements of the project.
 
