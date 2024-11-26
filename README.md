@@ -567,7 +567,7 @@ This is the records of discussions/meetings during the project duration.
  
 ## Thoughts on the Project 🍻  
 
-Lessons Learned from the Project:
+Lessons Learned from this Project:
 Through this project, I gained a profound understanding of the importance of effective version control using Git and strategic branch management. The experience of collaborating through pull requests and merges, and resolving code conflicts was immensely educational. Utilizing Django, I designed database models and developed RESTful APIs for frontend-backend communication, realizing the significance of user authentication and permission management. In frontend development with Vue.js, I leveraged Vue components and Vue Router to construct a Single Page Application (SPA) structure and implemented state management using Vuex. This approach significantly enhanced the responsive web design and user interaction elements of the project.
 
 New Skills Acquired:
