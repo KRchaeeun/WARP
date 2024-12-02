@@ -1,5 +1,5 @@
 # Warp
-This is the project about the movie recommendation website using Django & Vue.js.  
+This is the project about the movie recommendation website using Django & Vue.js.
 
 <br>
 <br>
