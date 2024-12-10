@@ -3,7 +3,7 @@ This is the project about the movie recommendation website using Django & Vue.js
 
 <br>
 <br>
- 
+  
 ## MEMBERS 👩‍👧‍👧  
 - [Hana Na](https://github.com/hana-nana)
 - [Yejin Eum](https://github.com/yjeum)  
